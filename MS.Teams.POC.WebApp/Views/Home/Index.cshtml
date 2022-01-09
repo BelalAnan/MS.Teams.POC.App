@@ -1,0 +1,441 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>GetAllmessagesinchannel</h1>
+
+<div>
+
+    <form method="get" action="@Url.Action("GetAllmessagesinchannel", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("channelid")
+            @Html.TextBox("channelid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create Notification(by using post link)</h1>
+
+<div>
+
+    <form method="post" action="@Url.Action("CreateNotification", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Title")
+            @Html.TextBox("Title", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("content")
+            @Html.TextBox("content", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("chatid")
+            @Html.TextBox("chatid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("messageid")
+            @Html.TextBox("messageid", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create Notification (chat id)</h1>
+
+<div>
+
+    <form method="post" action="@Url.Action("CreateNotification2", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Title")
+            @Html.TextBox("Title", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("content")
+            @Html.TextBox("content", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("chatid")
+            @Html.TextBox("chatid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("messageid")
+            @Html.TextBox("messageid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label(" weburl")
+            @Html.TextBox(" weburl", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Add Member To Team</h1>
+
+<div>
+
+    <form method="post" action="@Url.Action("AddmemberToTeam", "Home")">
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("memberid")
+            @Html.TextBox("memberid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("azureuserid")
+            @Html.TextBox("azureuserid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create Team</h1>
+
+<div>
+
+    <form method="post" action="@Url.Action("CreateTeam", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("DisplayName")
+            @Html.TextBox("DisplayName", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Description")
+            @Html.TextBox("Description", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1> List All Applications </h1>
+
+<div>
+    <form method="get" action="@Url.Action("ListAllApplications", "Home")">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>ListAllChats </h1>
+<div>
+    <form method="get" action="@Url.Action("ListAllChats", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Get teams </h1>
+<div>
+    <form method="get" action="@Url.Action("GetAllteams", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>post channel mmessage(post) </h1>
+<div>
+    <form method="post" action="@Url.Action("CreatechannelMessage","Home")">
+        <div class="form-group">
+            @Html.Label("content")
+            @Html.TextBox("content", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("channelid")
+            @Html.TextBox("channelid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create message one to one  </h1>
+<div>
+    <form method="post" action="@Url.Action("CreateonetooneChat","Home")">
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<h1>Get channels </h1>
+<div>
+    <form method="get" action="@Url.Action("GetAllchannels", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create Channel</h1>
+<div>
+    <form method="post" action="@Url.Action("CreateChannel", "Home")">
+
+        <div class="form-group">
+            @Html.Label("DisplayName")
+            @Html.TextBox("DisplayName", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Description")
+            @Html.TextBox("Description", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("id")
+            @Html.TextBox("id", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create Calendar</h1>
+
+<div>
+    <form method="post" action="@Url.Action("CreateCalendar", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Title")
+            @Html.TextBox("Title", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    DeleteCalendar
+</h1>
+
+<div>
+    <form method="post" action="@Url.Action("DeleteCalendar", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("calendarid")
+            @Html.TextBox("calendarid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    ListUserCalendars
+</h1>
+
+<div>
+    <form method="get" action="@Url.Action("ListUserCalendars", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>Create Event</h1>
+<div>
+    <form method="post" action="@Url.Action("CreateEvent", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Title")
+            @Html.TextBox("Title", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("Description")
+            @Html.TextArea("Description", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("calendarname")
+            @Html.TextArea("calendarname", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<h1>Get User Events</h1>
+<div>
+    <form method="post" action="@Url.Action("GetUserEvents", "Home")">
+        <div class="form-group">
+            @Html.Label("Send To")
+            @Html.TextBox("userEmail", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>DeleteUserEvent</h1>
+<div>
+    <form method="post" action="@Url.Action("DeleteUserEvent", "Home")">
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("EventId")
+            @Html.TextBox("EventId", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>UpdateUserEvent</h1>
+<div>
+    <form method="post" action="@Url.Action("UpdateUserEvent", "Home")">
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("EventId")
+            @Html.TextBox("EventId", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("subject")
+            @Html.TextBox("subject", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    AddAppsToTeamOrChannel
+</h1>
+<div>
+
+    <form method="post" action="@Url.Action("AddAppsToTeamOrChannel", "Home")">
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("channelid")
+            @Html.TextBox("channelid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    Createonlinemeetingandthenpostmessageaboutit
+</h1>
+<div>
+    <form method="post" action="@Url.Action("Createonlinemeetingandthenpostmessageaboutit", "Home")">
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("teamid")
+            @Html.TextBox("teamid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("channelid")
+            @Html.TextBox("channelid", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    GetEducationalClasses
+</h1>
+<div>
+    <form method="get" action="@Url.Action("GetEducationalClasses", "Home")">
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    GetDefaultChannel
+</h1>
+<div>
+    <form method="get" action="@Url.Action("GetDefaultChannel", "Home")">
+        <div class="form-group">
+            @Html.Label("SendTo")
+            @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+        </div>
+        <div class="form-group">
+            @Html.Label("TeamId")
+            @Html.TextBox("TeamId", "", new { @class = "form-control", isrequired = true })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<h1>
+    AddEducationalClass
+    
+</h1>
+<div>
+    <form method="post" action="@Url.Action("CreateEducationalClass", "Home")">
+    <div class="form-group">
+        @Html.Label("SendTo")
+        @Html.TextBox("SendTo", "", new { @class = "form-control", isrequired = true })
+    </div>
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+

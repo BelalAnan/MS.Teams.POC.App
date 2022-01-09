@@ -1,0 +1,11 @@
+﻿
+
+@ViewBag.Title
+@ViewBag.Description
+
+@{
+
+    var _event = Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.Data);
+}
+
+@_event
